@@ -1,0 +1,93 @@
+/*  carrusel */
+    /* Para poder superponer texto */
+.carousel-container {
+    position: relative;
+  }
+    /* Bajarle el Brillo a las imagenes del carrusel*/
+  .carousel-container .carousel-item img {
+    filter: brightness(65%); 
+  }
+  
+/* Texto sobre carrusel */
+
+#carouselExampleAutoplaying{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.d-block{
+    filter: brightness(50%) !important;
+}
+
+.text-overlay{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.quiero{
+    background-color: transparent;
+    color: #888686;
+    border: solid 1px #777777;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+    margin-right: 10px;
+}
+
+.comprar{
+    background-color: #25A946;
+    color: #ffffff;
+    border: solid 1px #25A946;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px;
+}
+
+
+/* Oradores */
+.sub {
+    border-bottom: 1px dotted black;
+  }
+  
+/* Donde? */
+.fondo-gris {
+    background-color: #121212; /* Gris oscuro similar al ejemplo proporcionado */
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* charla ignite */
+  .oradores-text a:hover {
+    text-decoration: underline dotted; 
+  }
+  .charla-ignite {
+    text-decoration: underline dotted; /* Subrayado punteado */
+  }
+  
+/*Footer*/
+  .grid-conteiner{
+    display: grid;
+    background: rgb(21,91,111);
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-template-rows: 95px;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.grid-conteiner >div{
+    font-size: medium;
+    text-align: center;
+    color: aliceblue;
+
+}
+.grid-conteiner div:hover{
+    background-color: rgb(13, 4, 74);
+   
+}
+.grid-conteiner a{
+    text-decoration: none;
+    color: inherit;
+}

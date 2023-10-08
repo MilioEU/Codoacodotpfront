@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      /* Estilo para quitar subrayado solo para el texto "CONOCE A LOS ORADORES" */
+      .oradores-text {
+        text-decoration: none !important;
+        color: black !important;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+<!-- /* Barra de navegación */ -->
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <img id="img" src="/media/codoacodo.png" alt="logo" width="180px">
+          <a class="navbar-brand text-white" href="#">Conf Bs As</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
+              <a class="nav-link text-white" href="#">Los oradores</a>
+              <a class="nav-link text-white" href="#">El lugar y la fecha</a>
+              <a class="nav-link disabled text-white" aria-disabled="true">Conviértete en orador</a>
+              <a class="nav-link disabled text-success" aria-disabled="true">Comprar tickets</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- /* Carrusel */ -->
+
+    <div class="carousel-container">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="/media/ba1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item active">
+            <img src="/media/ba2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/media/ba3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+<!-- /* Texto sobre carrusel */ -->
+
+
+
+<div class="text-overlay">
+  <div class="text-content" style="max-height: 70vh; overflow-y: auto; padding: 20px;">
+    <h2 class="text-overlay-heading">Conf Bs As</h2>
+    <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad, el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+    <a href="#conviertete"><button type="button" class="btn btn-outline-light">Quiero ser Orador</button></a>
+    <a href="#ticket"><button type="button" class="btn btn-success">Comprar Tickets</button></a>
+  </div>
+</div>
+
+
+    
+<!-- /* Oradores */ -->
+<section class="oradores container-fluid text-center" style="margin-top: 30px;">
+  <p><a href="#" class="oradores-text">CONOCE A LOS</a></p>
+  <h2><a href="#" class="oradores-text">ORADORES</a></h2>
+</section>
+
+
+<!-- /* Cards */ -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/media/steve.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="container-booton">
+            <button type="button" class="btn btn-warning" style="font-weight: 1000;">Javascript</button>
+            <button type="button" class="btn btn-info" style="font-weight: 1000; color: white;">React</button>
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/media/bill.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="container-booton">
+            <button type="button" class="btn btn-warning" style="font-weight: 1000;">Javascript</button>
+            <button type="button" class="btn btn-info" style="font-weight: 1000; color: white;">React</button>
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/media/ada.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="container-booton">
+            <button type="button" class="btn btn-secondary" style="font-weight: 1000;">Negocios</button>
+            <button type="button" class="btn btn-danger" style="font-weight: 1000; color: white;">StarTups</button>
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /* Donde? */ -->
+
+<div class="container-fluid" id="lugar">
+  <div class="row" id="row">
+    <div class="col-md-6">
+      <img src="/media/honolulu.jpg" class="card-img-top" alt="..." id="imagen-lugar">
+    </div>
+    <div class="col-md-6 bg-dark p-4">
+      <div class="text-container">
+        <h3 class="text-white">BS AS - Octubre</h3>
+        <<span class="text-white">Buenos Aires es la provincia y localidad más grande del estado Argentino, en los Estados Unidos, Honolulu es la provincia más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600km² de superficie).</span>
+      </div>
+      <button type="button" class="btn btn-outline-light">Conocé más</button>
+    </div>
+  </div>
+</div>
+<!-- /* Conviertete en Orador */ -->
+<section class="oradores container-fluid text-center" style="margin-top: 30px;">
+  <p><a href="#" class="oradores-text">CONVIÉRTETE EN </a></p>
+  <h2><a href="#" class="oradores-text">ORADOR</a></h2>
+  <p><a href="#" class="oradores-text">Anótate como orador para dar una <span class="charla-ignite">charla ignite</span>. Cuéntanos de qué quieres hablar!</a></p>
+</section>
+
+<!-- /* Formulario de Inscripción */ -->
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <input style="font-size: 1.8rem;margin-bottom:5px;" type="text" class="form-control form-control-lg" placeholder="Nombre" aria-label="Nombre">
+        </div>
+        <div class="col-md-6">
+          <input style="font-size: 1.8rem;" type="text" class="form-control form-control-lg" placeholder="Apellido" aria-label="Apellido">
+        </div>
+      </div>
+      <br>
+      <div class="mb-3">
+        <textarea style="height:150px;font-size: 2rem;" class="form-control" id="exampleFormControlTextarea1" placeholder="¿Sobre qué quieres hablar?" rows="3"></textarea>
+      </div>
+    </div>
+    <p style="font-size:1.2rem;">Recuerda incluir un titulo para tu charla</p>
+    <button style="width:100%;height:50px;font-size:2.1rem;color: aliceblue;background-color: rgb(150,201,62);border-color:rgb(150,201,63);" type="button" class="btn btn-success">Enviar</button>
+    <br>
+    <br>
+  </div>
+  <footer>
+    <div class="grid-conteiner">
+        <div><a href="#">Preguntas Frecuentes</a></div>
+        <div><a href="#">Contactos</a></div>
+        <div><a href="#">Prensa</a></div>
+        <div><a href="#">Conferencias</a></div>
+        <div><a href="#">Terminos y condiciones</a></div>
+        <div><a href="#">Privacidad</a></div>
+        <div><a href="#">Estudiantes</a></div>
+    </div>
+</footer>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
